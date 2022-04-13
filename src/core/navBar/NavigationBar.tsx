@@ -48,7 +48,7 @@ export default function NavationBar({ setDailyStatus }: Props) {
 										fetchData();
 									}}
 								>
-									Get data
+									Filter dates
 								</button>
 							</div>
 						</div>
