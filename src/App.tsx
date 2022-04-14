@@ -3,15 +3,14 @@ import Footer from './core/footer/Footer';
 import HomePage from './core/hompePage/HomePage';
 import NavationBar from './core/navBar/NavigationBar';
 import './styles/main.css';
-import { Status } from './utils/interface';
 
 function App() {
-	const [status, setStatus] = useState<Status[]>([]);
-	const [perTimeStamp, setPerTimeStamp] = useState<string>('day');
+	const [from, setFrom] = useState<string>('2021-06-01');
+	const [to, setTo] = useState<string>('2021-12-31');
 	return (
 		<div className="">
-			<NavationBar setStatus={setStatus} setPerTimeStamp={setPerTimeStamp} />
-			<HomePage status={status} perTimeStamp={perTimeStamp} />
+			<NavationBar to={to} from={from} />
+			<HomePage setTo={setTo} setFrom={setFrom} />
 			<Footer />
 		</div>
 	);

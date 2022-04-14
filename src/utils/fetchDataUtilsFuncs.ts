@@ -1,8 +1,9 @@
 import axios, { AxiosError } from 'axios';
-import { Notyf } from 'notyf';
 import { Dispatch, SetStateAction } from 'react';
+import { Notyf } from 'notyf';
 import { BASEURL } from './config';
 import { Status } from './interface';
+import 'notyf/notyf.min.css';
 
 // eslint-disable-next-line import/prefer-default-export
 export const fetchDataByDatesRange = async (

@@ -13,14 +13,14 @@ export function generateData(allStatus: Status[], perTimeStamp: string) {
 			{
 				label: 'Income',
 				data: incomes,
-				borderColor: 'rgb(0, 0, 252)',
-				backgroundColor: 'rgba(0, 0, 252, 0.5)',
+				borderColor: 'rgb(252, 0, 0)',
+				backgroundColor: 'rgba(252, 0, 0, 0.5)',
 			},
 			{
 				label: 'Outcome',
 				data: outcome,
-				borderColor: 'rgb(252, 0, 0)',
-				backgroundColor: 'rgba(252, 0,0, 0.5)',
+				borderColor: 'rgb(0, 0, 252)',
+				backgroundColor: 'rgba(0, 0,252, 0.5)',
 			},
 			{
 				label: 'revenue',

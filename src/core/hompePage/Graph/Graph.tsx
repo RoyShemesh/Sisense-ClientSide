@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
 	Chart as ChartJS,
 	CategoryScale,
@@ -27,14 +27,21 @@ ChartJS.register(
 );
 
 export default function Graph({ status, perTimeStamp }: Props) {
+	const [notFound, setNotFound] = useState('');
+	setTimeout(() => {
+		setNotFound('No data found for those dates');
+	}, 1500);
 	const data = generateData(status, perTimeStamp);
 	return (
 		<div className="">
-			<div className="hidden md:mt-28 mt-24 md:flex justify-center">
-				<Line options={options} data={data} />
+			<div className="hidden md:flex justify-center">
+				{status[0] ? (
+					<Line options={options} data={data} />
+				) : (
+					<div className="mt-20">{notFound}</div>
+				)}
 			</div>
-			<div className="flex flex-col items-center font-thin text-2xl  mt-24 md:hidden">
-				{' '}
+			<div className="flex flex-col items-center font-thin text-2xl  md:hidden">
 				Please rotate your phone
 				<img src={rotatePhone} alt="" className="object-cover object-center w-full h-full" />
 			</div>
