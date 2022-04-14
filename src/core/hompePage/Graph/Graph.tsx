@@ -12,8 +12,8 @@ import {
 import Zoom from 'chartjs-plugin-zoom';
 import { Line } from 'react-chartjs-2';
 import rotatePhone from '../../../styles/img/rotateYourDevice.png';
-import { DailyStatus } from '../../../utils/interface';
-import { generateData } from '../../../utils/utilsFuncs';
+import { Status } from '../../../utils/interface';
+import { generateData } from '../../../utils/chartUtilsFuncs';
 
 ChartJS.register(
 	CategoryScale,
@@ -25,39 +25,9 @@ ChartJS.register(
 	Legend,
 	Zoom
 );
-export const options = {
-	responsive: true,
-	interaction: {
-		mode: 'index' as const,
-		intersect: false,
-	},
-	// Zoom: {
-	// 	zoom: {
-	// 		pan: { enabled: true, mode: 'xy', speed: 10 },
-	// 		zoom: {
-	// 			enabled: true,
-	// 			drag: false,
-	// 			mode: 'xy',
-	// 			rangeMin: { x: 0, y: 0 },
-	// 			rangeMax: { x: 10, y: 15 },
-	// 		},
-	// 	},
-	// },
-	plugins: {
-		legend: {
-			position: 'top' as const,
-		},
-		title: {
-			display: true,
-			// text: 'Chart.js Line Chart',
-		},
-		layout: {
-			padding: 20,
-		},
-	},
-};
-export default function Graph({ dailyStatus }: Props) {
-	const data = generateData(dailyStatus);
+
+export default function Graph({ status, perTimeStamp }: Props) {
+	const data = generateData(status, perTimeStamp);
 	return (
 		<div className="">
 			<div className="hidden md:mt-28 mt-24 md:flex justify-center">
@@ -72,6 +42,26 @@ export default function Graph({ dailyStatus }: Props) {
 	);
 }
 
+const options = {
+	responsive: true,
+	interaction: {
+		mode: 'index' as const,
+		intersect: false,
+	},
+	plugins: {
+		legend: {
+			position: 'top' as const,
+		},
+		title: {
+			display: true,
+		},
+		layout: {
+			padding: 20,
+		},
+	},
+};
+
 interface Props {
-	dailyStatus: DailyStatus[];
+	status: Status[];
+	perTimeStamp: string;
 }
