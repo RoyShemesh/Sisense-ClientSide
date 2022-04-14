@@ -8,7 +8,7 @@ export default function HomePage({ setTo, setFrom }: Props) {
 	const [status, setStatus] = useState<Status[]>([]);
 	const [perTimeStamp, setPerTimeStamp] = useState<string>('day');
 	return (
-		<div className="mt-20 ">
+		<div className="mt-16 ">
 			<SearchForm
 				setStatus={setStatus}
 				setPerTimeStamp={setPerTimeStamp}
