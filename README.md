@@ -28,7 +28,7 @@ The technoloies I chose to use are:
 2. Clone the forked repo to your computer.
 3. Run `npm install`.
 4. Run the server side.
-5. Run `npm run start` for start recicve requsets on client environment.
+5. Run `npm run start` for start using the client environment.
 
 ## Screenshots
 
