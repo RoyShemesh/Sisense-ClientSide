@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# Sisense Grocery Mangement Client Repo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What this repo stands for
 
-## Available Scripts
+Welcome to grocery mangement Client Readme, this app can manage your incomes, outcomes and revenue.
+You are able to see all of your data sorted per day, week or month.
+In addition you can choose which line in the graph you prefer to watch, whether it is one two or all three.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. See all your data sorted by day.
+2. **(Extra)** The app is fully mobile supproted.
+3. **(Extra)** See all your data sorted weekly or monthly.
+4. **(Extra)** Choose which graph you prefer to watch.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The technoloies I chose to use are:
 
-### `npm test`
+1. React.JS.
+2. Chart.JS.
+3. ESLint
+4. TailwindCSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instructions
 
-### `npm run build`
+1. Fork this repo into your account.
+2. Clone the forked repo to your computer.
+3. Run `npm install`.
+4. Run the server side.
+5. Run `npm run start` for start recicve requsets on client environment.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Regular screen - Dates 1/6/2021-31/12/2021 sorted by day
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Example](./screenshots/SortedDay_RegularScreen.png)
 
-### `npm run eject`
+### Regular screen - Dates 1/6/2021-31/12/2021 sorted by Month
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Example](./screenshots/SortedMonth_RegularScreen.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Regular screen - Dates 1/6/2021-31/12/2021 only incomes and revenue shown
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Example](./screenshots/SortedWeekIncomeRevenue_RegularScreen.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Mobile screen - Vertical screen will not show any data
 
-## Learn More
+![Example](./screenshots/Vertical_MobileScreen.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Mobile screen - Dates 1/6/2021-31/12/2021 sorted by day
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Example](./screenshots/SortedDay_MobileScreen.png)
+
+### Mobile screen - Dates 1/6/2021-31/12/2021 sorted by Month
+
+![Example](./screenshots/SortedMonth_MobileScreen.png)
+
+### Mobile screen - Dates 1/6/2021-31/12/2021 only incomes and outcome shown
+
+![Example](./screenshots/SortedWeekIncomeOutcome_MobileScreen.png)

@@ -23,7 +23,7 @@ export function generateData(allStatus: Status[], perTimeStamp: string) {
 				backgroundColor: 'rgba(0, 0,252, 0.5)',
 			},
 			{
-				label: 'revenue',
+				label: 'Revenue',
 				data: revenue,
 				borderColor: 'rgb(0, 252, 0)',
 				backgroundColor: 'rgba(0, 252, 0, 0.5)',
